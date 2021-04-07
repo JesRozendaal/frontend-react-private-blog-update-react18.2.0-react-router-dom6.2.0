@@ -9,7 +9,7 @@ function Overview() {
       <h3>Aantal blogposts: {posts.length}</h3>
       <ul>
         {posts.map((post) => {
-          return <li>
+          return <li key={post.id}>
             <Link to={`blog/${post.id}`}>
               {post.title}
             </Link>
