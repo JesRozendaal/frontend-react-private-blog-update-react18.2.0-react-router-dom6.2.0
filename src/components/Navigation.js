@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 
 function Navigation({ isAuth, toggleAuth }) {
-  let history = useHistory();
+  const history = useHistory();
 
   function signOut() {
     toggleAuth(false);
