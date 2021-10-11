@@ -34,7 +34,7 @@ function App() {
         <PrivateRoute exact path="/blogposts" isAuth={isAuthenticated}>
           <Overview />
         </PrivateRoute>
-        <PrivateRoute exact path="/blog/:id" isAuth={isAuthenticated}>
+        <PrivateRoute exact path="/blog/:blogId" isAuth={isAuthenticated}>
           <BlogPost />
         </PrivateRoute>
       </Switch>

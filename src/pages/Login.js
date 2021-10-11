@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 
 function Login({ toggleAuth }) {
-  let history = useHistory();
+  const history = useHistory();
 
   function signIn() {
     toggleAuth(true);
