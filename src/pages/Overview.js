@@ -10,7 +10,7 @@ function Overview() {
       <ul>
         {posts.map((post) => {
           return <li key={post.id}>
-            <Link to={`blog/${post.id}`}>
+            <Link to={`/blogposts/${post.id}`}>
               {post.title}
             </Link>
           </li>

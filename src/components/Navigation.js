@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Navigation({ isAuth, toggleAuth }) {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function signOut() {
     toggleAuth(false);
-    history.push('/')
+    navigate('/')
   }
 
   return (
